@@ -1,386 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Safa Mabrouk</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Safa Mabrouk</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section>
-      <div class="section__pic-container">
-        <img src="./assets/profil.png" alt="Safa Mabrouk profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Safa Mabrouk</h1>
-        <p class="section__text__p2">UI/UX Designer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Safa Mabrouk CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/safa-mabrouk/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">        
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>~ 1 year Computer Science engineer</p><br />
-              <p>~ 2 years UI/UX Designer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Engineering degree in Computer Science
-              <br /> Bachelor's degree in computer science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I have one year of experience as an Odoo Engineer, focusing on module
-               development, customization, and testing using Odoo and PostgreSQL. 
-               I was also involved in drafting specifications for various projects. 
-               Following that, I worked for two years as a UI/UX Designer, conducting 
-               user research through interviews, surveys, and observations to understand 
-               industrial user needs. I developed web and mobile solutions and performed 
-               usability testing to ensure intuitive and efficient user interfaces.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Odoo</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jira</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">UI/UX Designer</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Adobe XD</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Miro</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Adobe Illustrator</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safa Mabrouk — UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Safa Mabrouk, UI/UX Designer & Digital Product Designer." />
+
+  <style>
+    /* ============ GENERAL ============ */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --dark: #1d3a35;        /* dark green */
+      --accent: #2e7d6b;      /* teal green */
+      --light: #f6f3ec;       /* warm off-white */
+      --text: #333333;
+      --muted: #777777;
+      --radius: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.7;
+    }
+
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+    section { padding: 80px 0; }
+
+    h1, h2, h3 { color: var(--dark); line-height: 1.25; }
+
+    .section-label {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 48px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 30px;
+      border: 2px solid var(--dark);
+      font-size: 15px;
+      text-decoration: none;
+      color: var(--dark);
+      transition: 0.3s;
+      cursor: pointer;
+      background: transparent;
+      font-family: inherit;
+    }
+    .btn:hover { background: var(--dark); color: #fff; }
+    .btn.primary { background: var(--dark); color: #fff; }
+    .btn.primary:hover { background: var(--accent); border-color: var(--accent); }
+
+    /* ============ NAVBAR ============ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      background: var(--light);
+      border-bottom: 1px solid #e5e0d5;
+      z-index: 100;
+    }
+    nav .container {
+      display: flex; justify-content: space-between; align-items: center;
+      height: 64px;
+    }
+    .logo { font-size: 20px; font-weight: bold; color: var(--dark); text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text); font-size: 15px; }
+    .nav-links a:hover { color: var(--accent); }
+    .menu-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--dark); }
+
+    /* ============ HERO ============ */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding-top: 64px;
+    }
+    .hero-inner { display: flex; align-items: center; gap: 60px; flex-wrap: wrap; }
+    .hero-text { flex: 1; min-width: 300px; }
+    .hero-text .hello { color: var(--muted); font-size: 16px; }
+    .hero-text h1 { font-size: 52px; margin: 8px 0; }
+    .hero-text h2 { font-size: 24px; color: var(--accent); font-weight: normal; margin-bottom: 20px; }
+    .hero-text p.tagline { font-size: 18px; font-style: italic; margin-bottom: 12px; }
+    .hero-text p.sub { color: var(--muted); margin-bottom: 28px; }
+    .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-photo {
+      width: 280px; height: 280px; border-radius: 50%;
+      background: var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 72px; font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    /* ============ ABOUT ============ */
+    .about-box {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 48px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .about-box p { margin-bottom: 16px; }
+
+    /* ============ WHAT I DO ============ */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card {
+      background: #fff; border-radius: var(--radius); padding: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .card h3 { font-size: 18px; margin-bottom: 10px; color: var(--accent); }
+    .card p { font-size: 15px; color: var(--muted); }
+
+    /* ============ SKILLS ============ */
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .skill-box { background: #fff; border-radius: var(--radius); padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+    .skill-box h3 { margin-bottom: 16px; font-size: 20px; }
+    .skill-box ul { list-style: none; columns: 2; }
+    .skill-box li { padding: 5px 0; font-size: 15px; }
+    .skill-box li::before { content: "✓ "; color: var(--accent); font-weight: bold; }
+
+    /* ============ EXPERIENCE ============ */
+    .exp-item {
+      background: #fff; border-radius: var(--radius); padding: 32px;
+      margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .exp-item h3 { font-size: 20px; }
+    .exp-item .duration { color: var(--accent); font-style: italic; margin-bottom: 12px; display: block; }
+    .exp-item ul { margin-left: 20px; }
+    .exp-item li { margin-bottom: 6px; }
+
+    /* ============ PROJECTS ============ */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+    .project-card {
+      background: #fff; border-radius: var(--radius); overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      cursor: pointer; transition: transform 0.3s;
+    }
+    .project-card:hover { transform: translateY(-6px); }
+    .project-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .project-info { padding: 22px; }
+    .project-info .num { color: var(--accent); font-size: 13px; letter-spacing: 1px; }
+    .project-info h3 { font-size: 20px; margin: 4px 0; }
+    .project-info p { font-size: 14px; color: var(--muted); }
+    .project-info .view { color: var(--accent); font-size: 14px; font-weight: bold; margin-top: 10px; display: inline-block; }
+
+    /* ============ MODAL (case study) ============ */
+    .modal {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 200;
+      overflow-y: auto;
+      padding: 40px 16px;
+    }
+    .modal.open { display: block; }
+    .modal-content {
+      max-width: 900px; margin: 0 auto;
+      background: #fff; border-radius: var(--radius);
+      overflow: hidden; position: relative;
+    }
+    .modal-content img { width: 100%; display: block; }
+    .modal-close {
+      position: sticky; top: 12px; float: right; margin: 12px;
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--dark); color: #fff; border: none;
+      font-size: 20px; cursor: pointer; z-index: 5;
+    }
+    .modal-caption { padding: 24px 32px; }
+    .modal-caption h3 { font-size: 24px; margin-bottom: 6px; }
+    .modal-caption p { color: var(--muted); font-size: 15px; }
+
+    /* ============ CONTACT ============ */
+    .contact-box { text-align: center; max-width: 560px; margin: 0 auto; }
+    .contact-box p { color: var(--muted); margin: 12px 0 32px; }
+    .contact-links { display: flex; flex-direction: column; gap: 14px; align-items: center; }
+    .contact-links a {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: #fff; border-radius: 30px; padding: 12px 28px;
+      text-decoration: none; color: var(--dark);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      font-size: 16px; transition: 0.3s;
+    }
+    .contact-links a:hover { background: var(--dark); color: #fff; }
+
+    /* ============ FOOTER ============ */
+    footer {
+      text-align: center; padding: 32px 0;
+      border-top: 1px solid #e5e0d5;
+      color: var(--muted); font-size: 14px;
+    }
+
+    /* ============ MOBILE ============ */
+    @media (max-width: 720px) {
+      .nav-links {
+        display: none; position: absolute; top: 64px; left: 0; right: 0;
+        background: var(--light); flex-direction: column;
+        padding: 20px 24px; gap: 16px; border-bottom: 1px solid #e5e0d5;
+      }
+      .nav-links.open { display: flex; }
+      .menu-toggle { display: block; }
+      .hero-text h1 { font-size: 38px; }
+      .hero-photo { width: 200px; height: 200px; font-size: 52px; margin: 0 auto; }
+      .about-box { padding: 28px; }
+      .section-title { font-size: 28px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">Safa Mabrouk</a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hello">Hello, I'm</p>
+        <h1>Safa Mabrouk</h1>
+        <h2>UI/UX Designer &amp; Digital Product Designer</h2>
+        <p class="tagline">I design intuitive digital experiences that turn complex processes into simple, usable products.</p>
+        <p class="sub">UI/UX Designer and Computer Science Engineer combining user-centered design, product thinking, and technical expertise to create meaningful digital products.</p>
+        <div class="hero-buttons">
+          <!-- Put your CV file (e.g. cv.pdf) next to this file and it will download -->
+          <a href="images/CV_Safa_Mabrouk_ORG.pdf" download class="btn primary"> CV</a>
+          <a href="#contact" class="btn">Contact Me</a>
         </div>
       </div>
-      
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project post.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Mindful Break Timer</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('Mindful_break_timer_app.html', '_blank')"
-              >
-                Discover 
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/post -rent app.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">EasyRide</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                
-              >
-                Discover
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project- greenshop.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">GreenShop</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                
-              >
-                Discover
-              </button>
-              
-            </div>
-          </div>
-        </div>
+           <img class="hero-photo" src="images/profile.jpg" alt="Safa Mabrouk" style="object-fit:cover;"> 
+    </div>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">Get to know more</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-box">
+        <p>I'm a <strong>UI/UX Designer and Computer Science Engineer</strong> with experience across UX research, product design, UI design, and software development.</p>
+        <p>My approach combines an understanding of <strong>users, business needs, and technical constraints</strong> to transform complex requirements into clear and intuitive digital experiences.</p>
+        <p>I work across the design process, from understanding user needs and defining flows to wireframing, prototyping, UI design, and usability testing.</p>
+        <p>My technical background in software development also helps me collaborate effectively with developers and design solutions that are both usable and technically feasible.</p>
+        <p>I'm particularly interested in <strong>digital products, business platforms, and technology-driven solutions</strong> where design can simplify complex workflows and improve everyday experiences.</p>
       </div>
-     
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:mabrouksafa9@gmail.com">mabrouksafa9@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/safa-mabrouk/">LinkedIn</a></p>
-        </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I DO ============ -->
+  <section id="services" style="padding-top:0;">
+    <div class="container">
+      <p class="section-label">My services</p>
+      <h2 class="section-title">What I Do</h2>
+      <div class="cards">
+        <div class="card"><h3>UX Research</h3><p>Understanding users, their needs, problems, and behaviors.</p></div>
+        <div class="card"><h3>Product Design</h3><p>Structuring complex requirements into clear and efficient user experiences.</p></div>
+        <div class="card"><h3>UI Design</h3><p>Creating clean, consistent, and accessible interfaces.</p></div>
+        <div class="card"><h3>Prototyping &amp; Testing</h3><p>Turning ideas into interactive prototypes and validating them through usability testing.</p></div>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" style="padding-top:0;">
+    <div class="container">
+      <p class="section-label">Explore my</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>UX / Product Design</h3>
+          <ul>
+            <li>UX Research</li><li>User Interviews</li><li>User Flows</li>
+            <li>Information Architecture</li><li>Wireframing</li><li>Prototyping</li>
+            <li>Usability Testing</li><li>UI Design</li><li>Design Systems</li>
           </ul>
         </div>
-      </nav>
-      <p>Copyright &#169; 2025 Safa Mabrouk. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        <div class="skill-box">
+          <h3>Tools</h3>
+          <ul>
+            <li>Figma</li><li>FigJam / Miro</li><li>Adobe XD</li><li>Adobe Illustrator</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Technical Background</h3>
+          <ul>
+            <li>HTML / CSS</li><li>JavaScript</li><li>React</li>
+            <li>Python</li><li>Odoo</li><li>PostgreSQL</li><li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE & EDUCATION ============ -->
+  <section id="experience" style="padding-top:0;">
+    <div class="container">
+      <p class="section-label">My journey</p>
+      <h2 class="section-title">Experience &amp; Education</h2>
+
+      <div class="exp-item">
+        <h3>UI/UX Designer</h3>
+        <span class="duration">2 years</span>
+        <ul>
+          <li>Conducted user research through interviews, surveys, and observations.</li>
+          <li>Designed web and mobile interfaces based on user and business needs.</li>
+          <li>Created user flows, wireframes, prototypes, and high-fidelity interfaces.</li>
+          <li>Conducted usability testing to improve user experience.</li>
+          <li>Worked on digital solutions for industrial and business contexts.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <h3>Odoo Engineer</h3>
+        <span class="duration">1 year</span>
+        <ul>
+          <li>Developed and customized Odoo modules.</li>
+          <li>Worked with Python and PostgreSQL.</li>
+          <li>Participated in testing and implementation.</li>
+          <li>Contributed to requirements and specification documents.</li>
+          <li>Collaborated on business-oriented digital solutions.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <h3>Education</h3>
+        <ul>
+          <li>Engineering Degree in Computer Science</li>
+          <li>Bachelor's Degree in Computer Science</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" style="padding-top:0;">
+    <div class="container">
+      <p class="section-label">Browse my recent</p>
+      <h2 class="section-title">Projects</h2>
+      <p style="text-align:center; color:var(--muted); margin:-24px 0 36px; font-size:15px;">
+        Click on a project to view its case study.
+      </p>
+
+      <div class="projects-grid">
+
+        <div class="project-card" onclick="openModal('modal-fabrique')">
+          <img src="images/project-fabrique.png" alt="Fabrique Entrepreneuriale — reservation platform" />
+          <div class="project-info">
+            <span class="num">01</span>
+            <h3>Fabrique Entrepreneuriale</h3>
+            <p>UX/UI Design · Product Design · Web Platform</p>
+            <span class="view">View case study →</span>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal-easyride')">
+          <img src="images/project_courr.png" alt="EasyRide — mobile app" />
+          <div class="project-info">
+            <span class="num">02</span>
+            <h3>GestCourrier</h3>
+            <p>UX/UI Design · Web Platform</p>
+            <span class="view">View case study →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MODALS : one per project ============ -->
+  <!-- Fabrique : full case study image -->
+  <div class="modal" id="modal-fabrique" onclick="closeOnBg(event, this)">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-fabrique')">✕</button>
+      <img src="images/case-study-fabrique.png" alt="Fabrique Entrepreneuriale — full case study" />
+      <div class="modal-caption">
+        <h3>Fabrique Entrepreneuriale</h3>
+        <p>Designing a digital platform for smarter workspaces and FabLab management — from UX research to final UI.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other projects : replace these images with your own case study images later -->
+  <div class="modal" id="modal-easyride" onclick="closeOnBg(event, this)">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-easyride')">✕</button>
+      <img src="images/project_courr_use_case.png" alt="EasyRide — case study" />
+    
+    </div>
+  </div>
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container contact-box">
+      <p class="section-label">Get in touch</p>
+      <h2 class="section-title">Let's design something meaningful.</h2>
+      <p>I'm interested in creating useful, intuitive, and impactful digital products.</p>
+      <div class="contact-links">
+        <a href="mailto:mabrouksafa9@gmail.com">✉️ mabrouksafa9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/safa-mabrouk" target="_blank" rel="noopener">💼 LinkedIn — Safa Mabrouk</a>
+        <a href="https://github.com/SafaMabrouk9" target="_blank" rel="noopener">🐙 GitHub — SafaMabrouk9</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <p>Copyright © 2026 Safa Mabrouk. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ============ JAVASCRIPT ============ -->
+  <script>
+    // Mobile menu
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Open a project modal
+    function openModal(id) {
+      document.getElementById(id).classList.add('open');
+      document.body.style.overflow = 'hidden'; // stop page scroll
+    }
+
+    // Close a project modal
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Close when clicking the dark background
+    function closeOnBg(event, modal) {
+      if (event.target === modal) closeModal(modal.id);
+    }
+
+    // Close with the Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.open').forEach(function (m) {
+          closeModal(m.id);
+        });
+      }
+    });
+  </script>
+
+</body>
 </html>
